@@ -3,7 +3,7 @@ mode con cp select=437 >nul
 setlocal EnableDelayedExpansion
 
 set confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
-set confhome_cn=https://gitlab.com/bin456789/reinstall/-/raw/main
+set confhome_cn=https://ghproxy.net/https://raw.githubusercontent.com/bin456789/reinstall/main
 rem set confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/bin456789/reinstall/main
 
 set pkgs=curl,cpio,p7zip,ipcalc,dos2unix,jq,xz,gzip,zstd,openssl,bind-utils,libiconv,binutils
@@ -37,7 +37,7 @@ if not exist %tmp% (
 rem 检查是否国内
 if not exist geoip (
     rem 部分地区 www.cloudflare.com 被墙
-    call :download http://dash.cloudflare.com/cdn-cgi/trace %~dp0geoip || goto :download_failed
+    call :download http://www.cloudflare-cn.com/cdn-cgi/trace %~dp0geoip || goto :download_failed
 )
 findstr /c:"loc=CN" geoip >nul
 if not errorlevel 1 (
