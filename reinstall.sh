@@ -4,7 +4,7 @@
 
 set -eE
 confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
-confhome_cn=https://gitlab.com/bin456789/reinstall/-/raw/main
+confhome_cn=https://ghproxy.net/https://raw.githubusercontent.com/bin456789/reinstall/main
 # confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/bin456789/reinstall/main
 
 # 默认密码
@@ -126,7 +126,7 @@ curl() {
 is_in_china() {
     if [ -z "$_loc" ]; then
         # 部分地区 www.cloudflare.com 被墙
-        _loc=$(curl -L http://dash.cloudflare.com/cdn-cgi/trace | grep '^loc=' | cut -d= -f2)
+        _loc=$(curl -L http://www.cloudflare-cn.com/cdn-cgi/trace | grep '^loc=' | cut -d= -f2)
         if [ -z "$_loc" ]; then
             error_and_exit "Can not get location."
         fi
