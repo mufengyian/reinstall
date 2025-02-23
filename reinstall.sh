@@ -130,7 +130,7 @@ is_in_china() {
 
     if [ -z "$_loc" ]; then
         # www.cloudflare.com/dash.cloudflare.com 国内访问的是美国服务器，而且部分地区被墙
-        _loc=$(curl -L http://www.visa.cn/cdn-cgi/trace | grep '^loc=' | cut -d= -f2)
+        _loc=$(curl -L https://www.visa.cn/cdn-cgi/trace | grep '^loc=' | cut -d= -f2)
         if [ -z "$_loc" ]; then
             error_and_exit "Can not get location."
         fi
