@@ -4,8 +4,8 @@
 
 set -eE
 confhome=https://raw.githubusercontent.com/mufengyian/reinstall/main
-confhome_cn=https://gh-proxy.com/raw.githubusercontent.com/mufengyian/reinstall/main
-# confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/bin456789/reinstall/main
+confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
+# confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 
 # 默认密码
 DEFAULT_PASSWORD=123@@@
