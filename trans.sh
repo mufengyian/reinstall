@@ -3835,12 +3835,10 @@ install_fnos() {
     # chroot $os_dir passwd -d root
 
     # ssh root 登录，测试用
-    if false; then
-        echo "root:$(get_password_linux_sha512)" | chroot $os_dir chpasswd -e
+    if true; then
+        echo "root:$(openssl passwd -6 123@@@)" | chroot $os_dir chpasswd -e
         allow_root_password_login $os_dir
         chroot $os_dir systemctl enable ssh
-        # Set root password to 123@@@
-        echo "root:123@@@" | chroot $os_dir chpasswd
     fi
 
     # grub
