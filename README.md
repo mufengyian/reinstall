@@ -72,7 +72,7 @@ curl -O https://raw.githubusercontent.com/mufengyian/reinstall/main/reinstall.sh
 国内服务器：
 
 ```bash
-curl -O https://gitlab.com/mufengyian/reinstall/-/raw/main/reinstall.sh || wget -O reinstall.sh $_
+curl -O https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/reinstall.sh || wget -O reinstall.sh $_
 ```
 
 ## 下载（当前系统是 <img width="20" height="20" src="https://blogs.windows.com/wp-content/uploads/prod/2022/09/cropped-Windows11IconTransparent512-32x32.png" /> Windows）
@@ -105,7 +105,7 @@ certutil -urlcache -f -split https://raw.githubusercontent.com/mufengyian/reinst
 国内服务器：
 
 ```batch
-certutil -urlcache -f -split https://gh-proxy.com/raw.githubusercontent.com/mufengyian/reinstall/main/reinstall.bat
+certutil -urlcache -f -split https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/reinstall.bat
 ```
 
 ## 使用
