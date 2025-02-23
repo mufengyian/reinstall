@@ -3,8 +3,8 @@ mode con cp select=437 >nul
 setlocal EnableDelayedExpansion
 
 set confhome=https://raw.githubusercontent.com/mufengyian/reinstall/main
-set confhome_cn=https://gh-proxy.com/raw.githubusercontent.com/mufengyian/reinstall/main
-rem set confhome_cn=https://gh-proxy.com/raw.githubusercontent.com/mufengyian/reinstall/main
+set confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
+rem set confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 
 set pkgs=curl,cpio,p7zip,ipcalc,dos2unix,jq,xz,gzip,zstd,openssl,bind-utils,libiconv,binutils
 set cmds=curl,cpio,p7zip,ipcalc,dos2unix,jq,xz,gzip,zstd,openssl,nslookup,iconv,ar
