@@ -111,7 +111,7 @@ call :check_cygwin_installed || (
 
     rem 下载 Cygwin
     if not exist setup-!CygwinArch!.exe (
-        call :download http://www.cygwin.com/setup-!CygwinArch!.exe %~dp0setup-!CygwinArch!.exe || goto :download_failed
+        call :download https://pan.mfya.cn/d/local/any/setup-!CygwinArch!.exe %~dp0setup-!CygwinArch!.exe || goto :download_failed
     )
 
     rem 安装 Cygwin
