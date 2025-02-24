@@ -3,7 +3,7 @@
 # shellcheck disable=SC2086
 
 set -eE
-confhome=https://raw.githubusercontent.com/mufengyian/reinstall/main
+confhome=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main
 confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 # confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 
