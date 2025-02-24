@@ -2,7 +2,7 @@
 mode con cp select=437 >nul
 setlocal EnableDelayedExpansion
 
-set confhome=https://raw.githubusercontent.com/mufengyian/reinstall/main
+set confhome=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main
 set confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 rem set confhome_cn=https://gh.catmak.name/https://raw.githubusercontent.com/mufengyian/reinstall/main/
 
