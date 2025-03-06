@@ -3958,7 +3958,7 @@ install_fnos() {
     echo "root:$(get_password_linux_sha512)" | chroot $os_dir chpasswd -e
 
     # ssh root 登录，测试用
-    if false; then
+    if true; then
         allow_root_password_login $os_dir
         chroot $os_dir systemctl enable ssh
     fi
